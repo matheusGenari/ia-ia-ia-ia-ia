@@ -1,4 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
+    
     --cor-fundo: #000000 ;
     --cor-principal: #000000 ;
     --cor-secundaria: #2261aa; 
@@ -25,15 +29,17 @@ body {
 }
 
 h1{
+    font-family: Roboto;
     color: var(--cor-destaque);
 }
 
 button {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
     border: none;
     border-radius: 15px;
-    margin: 20px;
+    margin: 10px;
     padding: 15px;
     transition: background-color 0.3s;
 }
