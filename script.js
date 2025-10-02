@@ -92,20 +92,15 @@ function mostraAlternativas(){
     for(const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
-        // A função de callback deve ser definida com um parâmetro para capturar o objeto
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
 
 function respostaSelecionada(opcaoSelecionada) {
-    // Captura a afirmação da opção selecionada
     const afirmacoes = opcaoSelecionada.afirmacao;
-    // Adiciona a afirmação à história final
     historiaFinal += afirmacoes + " ";
-    // Avança para a próxima pergunta
     atual++;
-    // Chama a próxima pergunta (ou o resultado se for a última)
     mostraPergunta();
 }
 
