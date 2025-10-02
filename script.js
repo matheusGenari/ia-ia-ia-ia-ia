@@ -6,67 +6,67 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Em uma apresentação de ciências, o professor demonstra um novo modelo de IA capaz de prever resultados de exames médicos com altíssima precisão. Qual o seu pensamento imediato?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Que incrível! Isso vai salvar vidas e revolucionar a medicina.",
+                afirmacao: "Se animou com o potencial da IA para resolver problemas complexos e melhorar a vida humana. "
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "É preocupante. E se a IA cometer um erro? Quem será responsabilizado?",
+                afirmacao: "Começou a refletir sobre as implicações éticas e a necessidade de regulamentação na aplicação da IA em áreas críticas. "
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Você percebe que um colega está usando uma IA para gerar todas as respostas de um questionário complexo, sem sequer ler as perguntas. Qual a sua reação?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Isso é trapaça. A IA deve ser uma ferramenta de apoio, não um substituto para o aprendizado.",
+                afirmacao: "Defendeu que o uso da IA deve ser orientado pela honestidade acadêmica e que a compreensão do conteúdo é essencial. "
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Se a IA pode fazer, por que perder tempo? Ele está apenas sendo eficiente.",
+                afirmacao: "Considerou o uso da IA como um atalho válido e prático, priorizando a velocidade na entrega das tarefas. "
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Em uma notícia, você lê que uma empresa utilizou um algoritmo de IA para selecionar candidatos a emprego, mas o algoritmo demonstrou um viés, favorecendo um grupo demográfico específico. O que você acha disso?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Os dados usados para treinar a IA estavam com viés. É preciso auditar e limpar esses dados para evitar injustiça.",
+                afirmacao: "Reconheceu a importância da qualidade e imparcialidade dos dados de treinamento para garantir uma IA justa e ética. "
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "É um problema isolado. A IA é, em sua maioria, neutra e mais justa que o julgamento humano.",
+                afirmacao: "Argumentou que, apesar de falhas pontuais, a IA ainda representa um avanço na redução de vieses subjetivos em processos de seleção. "
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Para um projeto de arte na escola, o professor permite o uso de IAs geradoras de imagem. Qual tipo de imagem você decide criar?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Uma imagem totalmente original, combinando estilos e conceitos que eu descrevo detalhadamente para a IA.",
+                afirmacao: "Passou a usar IAs generativas como uma extensão de sua criatividade, focando na curadoria e na elaboração de *prompts* criativos. "
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Uma imagem 'no estilo de' um artista famoso, para mostrar o quão bem a IA imita o trabalho humano.",
+                afirmacao: "Levantou o debate sobre os direitos autorais e a originalidade na arte gerada por IA, chamando a atenção para a questão da propriedade intelectual. "
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Seu trabalho final exige uma pesquisa aprofundada. Você encontra um resumo gerado por IA que é muito bom, mas não cita as fontes originais de forma clara. Qual sua abordagem?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Uso o resumo como base, mas me esforço para rastrear e verificar as fontes originais citadas pela IA (ou encontrá-las por conta própria).",
+                afirmacao: "Adotou a postura de verificar sempre a procedência da informação gerada pela IA, reforçando a importância da curadoria humana na pesquisa acadêmica. "
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Confio na IA. O importante é o resultado do resumo, não a origem de cada frase.",
+                afirmacao: "Desconsiderou a necessidade de rastrear as fontes, aceitando o resumo da IA como verdade absoluta e diminuindo a importância da verificação factual. "
             }
         ]
     },
@@ -92,23 +92,27 @@ function mostraAlternativas(){
     for(const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
+        // A função de callback deve ser definida com um parâmetro para capturar o objeto
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
 
 function respostaSelecionada(opcaoSelecionada) {
+    // Captura a afirmação da opção selecionada
     const afirmacoes = opcaoSelecionada.afirmacao;
+    // Adiciona a afirmação à história final
     historiaFinal += afirmacoes + " ";
+    // Avança para a próxima pergunta
     atual++;
+    // Chama a próxima pergunta (ou o resultado se for a última)
     mostraPergunta();
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "A sua jornada com a Inteligência Artificial levou você a...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
 
 mostraPergunta();
-
